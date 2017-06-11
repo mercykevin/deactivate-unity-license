@@ -1,0 +1,26 @@
+title: "Deactivate Unity license"
+summary: The step deactivates a Unity license 
+description: |-
+  This step deactivates the installed Unity license
+  
+  This should always be ran, whether it was successful or not.
+website: https://github.com/rubentorresbonet/deactivate-unity-license
+source_code_url: https://github.com/rubentorresbonet/deactivate-unity-license
+support_url: https://github.com/rubentorresbonet/deactivate-unity-license/issues
+host_os_tags:
+  - osx-10.10
+  - ubuntu
+project_type_tags:
+  - ios
+  - android
+type_tags:
+  - script
+is_requires_admin_user: true
+is_always_run: true
+is_skippable: false
+deps:
+  brew:
+  apt_get:
+  - name: xvfb
+    bin_name: xvfm-run
+run_if: ""
